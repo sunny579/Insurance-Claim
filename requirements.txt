@@ -5,7 +5,7 @@ certifi==2021.5.30
 
 click==8.0.1
 
-conda==4.10.3
+conda==4.3.13
 
 cycler==0.10.0
 
