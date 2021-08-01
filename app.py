@@ -44,7 +44,7 @@ def prediction():
     else:
         region =3
 
-    prediction = loadedModel.predict[[age,sex,bmi,children,smoker,region,charges]][0]
+    prediction = loadedModel.predict([[age,sex,bmi,children,smoker,region,charges]])[0]
     
     if prediction == 0:
         prediction ="Insurance is not claimed"
