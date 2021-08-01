@@ -52,7 +52,9 @@ def prediction():
         prediction = "Insurance is claimed"
 
     return render_template("insurance.html",prediction_output = prediction)
-
+@app.route('/<path:path>')
+def catch_all(path):
+    return redirect("/")
 
 #Main function
 if __name__ == "__main__":
